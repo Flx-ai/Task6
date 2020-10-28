@@ -11,13 +11,15 @@ public class Main {
         double n = readValue("n");
 
         double sumOfSummandsThisSequence = calcSumOfSummandsThisSequence(x,n);
-        double sumOfSummandsThisSequenceWithEpsilon = calcSumOfSummandsThisSequenceWithEpsilon(x, epsilon);
-        double sumOfSummandsThisSequenceWithEpsilonDividedBy10 = calcSumOfSummandsThisSequenceWithEpsilon(x, epsilon/10);
-        double valueOfFunctionUsingMath = calcValueOfFunctionUsingMath(x);
-
         printResult("Сумма n слагаемых заданной последовательности = ", sumOfSummandsThisSequence);
+
+        double sumOfSummandsThisSequenceWithEpsilon = calcSumOfSummandsThisSequenceWithEpsilon(x, epsilon);
         printResult("Сумма слагаемых, которые по абсолютной величине > epsilon = ", sumOfSummandsThisSequenceWithEpsilon);
+
+        double sumOfSummandsThisSequenceWithEpsilonDividedBy10 = calcSumOfSummandsThisSequenceWithEpsilon(x, epsilon/10);
         printResult("Сумма слагаемых, которые по абсолютной величине > epsilon / 10 = ", sumOfSummandsThisSequenceWithEpsilonDividedBy10);
+
+        double valueOfFunctionUsingMath = calcValueOfFunctionUsingMath(x);
         printResult("Значение заданной функции с помощью методов Math =  ", valueOfFunctionUsingMath);
     }
 
