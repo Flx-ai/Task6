@@ -20,7 +20,7 @@ public class Main {
         printResult("Сумма слагаемых, которые по абсолютной величине > epsilon / 10 = ", sumOfSummandsThisSequenceWithEpsilonDividedBy10);
 
         double valueOfFunctionUsingMath = calcValueOfFunctionUsingMath(x);
-        printResult("Значение заданной функции с помощью методов Math =  ", valueOfFunctionUsingMath);
+        printResult("Значение заданной функции с помощью метода Math =  ", valueOfFunctionUsingMath);
     }
 
     private static double readValue(String name) {
