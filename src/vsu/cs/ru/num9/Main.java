@@ -50,14 +50,16 @@ public class Main {
     }
 
     private static double calcSumOfSummandsThisSequenceWithEpsilon(double x, double epsilon) {
-        double summand = 1;
+        double summand = 0;
+        double nextSummand = 1;
         double sum = 0;
         double i = 0;
 
-        while (summand > epsilon) {
+        while (Math.abs(summand - nextSummand) > epsilon) {
+            summand = nextSummand;
             sum += summand;
             i += 2;
-            summand *= (i - 1) / i * pow(x, 2);
+            nextSummand *= (i - 1) / i * pow(x, 2);
         }
         return sum;
     }
