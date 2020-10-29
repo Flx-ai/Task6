@@ -6,7 +6,12 @@ public class Main {
     public static void main(String[] args) {
 
         double x = readValue("x");
-        if (!checkInput(x)) return;
+
+        if (!checkInput(x)) {
+            System.out.print("You entered incorrect x!");
+            return;
+        }
+
         double epsilon = readValue("epsilon");
         double n = readValue("n");
 
