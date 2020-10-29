@@ -94,5 +94,4 @@ public class Main {
     private static void printResult(String phrase, double result) {
         System.out.print(phrase + result);
     }
-
 }
