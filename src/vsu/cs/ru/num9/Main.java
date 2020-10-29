@@ -10,7 +10,7 @@ public class Main {
         double epsilon = readValue("epsilon");
         double n = readValue("n");
 
-        double sumOfSummandsThisSequence = calcSumOfSummandsThisSequence(x,n);
+        double sumOfSummandsThisSequence = calcSumOfSummandsThisSequence(x, n);
         printResult("Sum of n summands of this sequence = ", sumOfSummandsThisSequence);
         System.out.println();
 
